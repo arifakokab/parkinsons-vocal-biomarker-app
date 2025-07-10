@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: parkinsons-disease-ai-screening-via-speech-app
+    env: python
+    buildCommand: cd streamlit_app && pip install -r requirements.txt
+    startCommand: cd streamlit_app && streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    plan: free
