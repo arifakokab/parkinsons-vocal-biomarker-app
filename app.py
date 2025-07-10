@@ -46,7 +46,7 @@ def load_models():
     scaler_class = joblib.load("scaler.pkl")
     with open("feature_columns.pkl", "rb") as f:
         columns_class = pickle.load(f)
-    lstmcnn = keras.models.load_model("best_lstmcnn_model.keras")
+    lstmcnn = keras.models.load_model("best_lstmcnn_model_tf216.keras")
     scaler_sev = joblib.load("scaler_lstmcnn.pkl")
     with open("feature_columns_severity.pkl", "rb") as f:
         columns_sev = pickle.load(f)
