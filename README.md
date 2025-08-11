@@ -1,13 +1,12 @@
 # Parkinsons-Vocal-Biomarker-App
 
-A two-part, voice-based system for Parkinson’s disease (PD):
+**Parkinsons-Vocal-Biomarker-App** is a two-part system that turns short sustained “aaah” recordings into actionable signals for Parkinson’s care. The goal is twofold: (1) provide a fast, feature-based **screening** path that’s simple enough to deploy on the web, and (2) explore **progression monitoring** by forecasting visit-to-visit changes in clinician-rated motor\_UPDRS for already-diagnosed patients.
 
-* **Part 1 — Classifier (screening):** Random Forest classifier that distinguishes Healthy vs PD from acoustic “dysphonia” features, used as the deployable proof-of-concept for real-time voice→features→inference.
-* **Part 2 — Severity progression:** A compact BiGRU+1D-CNN that predicts visit-to-visit change in **motor\_UPDRS** (ΔUPDRS) for already-diagnosed patients to support remote monitoring and early flagging of sudden/drastic changes.
+* **Part 1 — Classifier (screening):** A Random Forest on robust dysphonia features (jitter, shimmer, HNR, pitch stats) that proves the voice → features → inference pipeline and serves as the deployable demo.
+* **Part 2 — Severity progression:** A compact BiGRU+1D-CNN that predicts next-visit Δmotor\_UPDRS to help flag sudden or unusual shifts during ongoing treatment (research-grade; not a diagnostic tool).
 
-Academic context: Built for the M.Sc(Eng) in Applied Artificial Intelligence capstone at the University of San Diego. Built solo by Arifa Kokab (Group 11).
+This project was completed as the **M.Sc(Eng) Applied AI capstone at the University of San Diego**, **built solo by Arifa Kokab (Group 11)**. The screening classifier is publicly deployed under the **CarePath AI Foundation**; see the links in the sections below.
 
-Deployment note: The Part-1 classifier is publicly deployed under a new nonprofit, the CarePath AI Foundation (links below). The progression model is research-grade and not deployed. This repository contains the research code for both parts. The production demo for Part 1 lives in its own repository (linked below).
 
 ## Live demo & external deployment repo (Part 1)
 
