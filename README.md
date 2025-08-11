@@ -43,7 +43,7 @@ README.md
 
 > All dataset usage follows their respective licenses/terms. This project is for research/education only and is not a medical device.
 
-## Methods (concise)
+## Methods Brief Overview:
 
 ### Part 1 — Screening classifier
 
