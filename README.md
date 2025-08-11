@@ -5,8 +5,9 @@ A two-part, voice-based system for Parkinson’s disease (PD):
 * **Part 1 — Classifier (screening):** Random Forest classifier that distinguishes Healthy vs PD from acoustic “dysphonia” features, used as the deployable proof-of-concept for real-time voice→features→inference.
 * **Part 2 — Severity progression:** A compact BiGRU+1D-CNN that predicts visit-to-visit change in **motor\_UPDRS** (ΔUPDRS) for already-diagnosed patients to support remote monitoring and early flagging of sudden/drastic changes.
 
-Academic context. Built for the M.Sc(Eng) in Applied Artificial Intelligence capstone at the University of San Diego. Built solo by Arifa Kokab (Group 11).
-Deployment note. The Part-1 classifier is publicly deployed under a new nonprofit, the CarePath AI Foundation (links below). The progression model is research-grade and not deployed. This repository contains the research code for both parts. The production demo for Part 1 lives in its own repository (linked below).
+Academic context: Built for the M.Sc(Eng) in Applied Artificial Intelligence capstone at the University of San Diego. Built solo by Arifa Kokab (Group 11).
+
+Deployment note: The Part-1 classifier is publicly deployed under a new nonprofit, the CarePath AI Foundation (links below). The progression model is research-grade and not deployed. This repository contains the research code for both parts. The production demo for Part 1 lives in its own repository (linked below).
 
 ## Live demo & external deployment repo (Part 1)
 
