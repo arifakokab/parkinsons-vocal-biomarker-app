@@ -102,10 +102,6 @@ The production demo lives in the separate repo noted above. Key details:
 * Models are **assistive**; clinical decisions must remain with qualified professionals.
 * Longitudinal deployment requires drift monitoring (hardware/channel shifts), recalibration, and ongoing validation.
 
-## License
-
-MIT License
-
 ## Status & roadmap
 
 * Deployed screening demo (separate repo + live site).
