@@ -97,39 +97,11 @@ The production demo lives in the separate repo noted above. Key details:
 * **Privacy:** No storage of voice or PII; in-memory processing only.
 * **License:** MIT (deployment repo).
 
-## Reproducibility (this repo)
-
-**Environment.** Python ≥3.10; NumPy, Pandas; scikit-learn; Matplotlib for plots; joblib for model I/O; a mainstream DL framework for Part 2.
-**Setup (example):**
-
-```bash
-git clone <this-repo-url>
-cd Parkinsons-Vocal-Biomarker-App
-python -m venv .venv && source .venv/bin/activate   # or conda
-pip install -r requirements.txt
-```
-
-**Run.**
-
-* Part 1: open the notebook in `Classifier Model (part 1 of 2)/`, run end-to-end; GridSearchCV prints best params and metrics; export trained RF via joblib if desired.
-* Part 2: open the notebook in `Severity Progression Predictor (Part 2 of 2)/`, run sequence builder, grouped CV, and subject-held-out test; review MAE, calibration, Δ-direction, and Bland–Altman outputs.
-
-Random seeds are fixed where applicable; progression splits are **subject-grouped** to avoid leakage.
-
 ## Ethics, privacy, and clinical use
 
 * Voice data can be identifiable; handle per HIPAA/IRB when collecting from humans.
 * Models are **assistive**; clinical decisions must remain with qualified professionals.
 * Longitudinal deployment requires drift monitoring (hardware/channel shifts), recalibration, and ongoing validation.
-
-## Citation
-
-* Little, McSharry, Hunter, Ramig (2008). *Suitability of dysphonia measurements for telemonitoring of Parkinson’s disease.* IEEE T-BME. (UCI PD dataset)
-* Oxford Parkinson’s Telemonitoring dataset (UPDRS; used here for longitudinal severity modeling).
-
-If you use this work:
-
-> Kokab, A. (2025). **Parkinsons-Vocal-Biomarker-App: Voice-based Screening and Severity Progression Modeling for PD** (Capstone project, University of San Diego).
 
 ## License
 
