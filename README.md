@@ -1,6 +1,6 @@
 # Parkinsons-Vocal-Biomarker-App
 
-**Parkinsons-Vocal-Biomarker-App** is a two-part system that turns short sustained “aaah” recordings into actionable signals for Parkinson’s care. The goal is twofold: (1) provide a fast, feature-based **screening** path that’s simple enough to deploy on the web, and (2) explore **progression monitoring** by forecasting visit-to-visit changes in clinician-rated motor\_UPDRS for already-diagnosed patients.
+**Parkinsons-Vocal-Biomarker-App** is a two-part system that turns short sustained “aaah” recordings into actionable signals for Parkinson’s care. The final Project Technical Report is available in this repository that goes into detail. The goal of this project is twofold: (1) provide a fast, feature-based **screening** path that’s simple enough to deploy on the web, and (2) explore **progression monitoring** by forecasting visit-to-visit changes in clinician-rated motor\_UPDRS for already-diagnosed patients.
 
 * **Part 1 — Classifier (screening):** A Random Forest on robust dysphonia features (jitter, shimmer, HNR, pitch stats) that proves the voice → features → inference pipeline and serves as the deployable demo.
 * **Part 2 — Severity progression:** A compact BiGRU+1D-CNN that predicts next-visit Δmotor\_UPDRS to help flag sudden or unusual shifts during ongoing treatment (research-grade; not a diagnostic tool).
@@ -29,9 +29,10 @@ The deployed app records a short sustained “aaah,” extracts features on the 
 
 ```
 Classifier Model (part 1 of 2)/
-    # Notebook/code for Random Forest training & evaluation
+    # Notebook/code for Random Forest training & evaluation (both .ipynb and .pdf files)
 Severity Progression Predictor (Part 2 of 2)/
-    # Notebook/code for BiGRU+1D-CNN Δmotor_UPDRS prediction
+    # Notebook/code for BiGRU+1D-CNN Δmotor_UPDRS prediction (both .ipynb and .pdf files)
+Final Project Technical Report
 README.md
 ```
 
